@@ -1,5 +1,5 @@
 /*
- * lucid_ctrl.c
+ * squarewave.c
  * este programa gera uma onda quadrada de aproximadamente 60Hz, utilizando o interruptor TC0 do microcontrolador ATMega328P
  * calculo para valor de OCR0A:
  *
@@ -14,13 +14,13 @@
 //frequencia do cristal externo = 16MHz
 #define F_CPU (16000000)
 
-//bibliotecas necess·rias
+//bibliotecas necess√°rias
 #include <avr/io.h>
 #include <avr/interrupt.h> 
 
 uint8_t interrompido = 1;
 
-/*--------------------------------------------------bloco de interrupÁ„o do TC0-------------------------------------------*/
+/*--------------------------------------------------bloco de interrup√ß√£o do TC0-------------------------------------------*/
 ISR(TIMER0_COMPA_vect)
 {
 	if (interrompido < 2)
@@ -40,7 +40,7 @@ ISR(TIMER0_COMPA_vect)
 1 - setar wgm0,1,2
 2 - calcular prescaler (N = 1024)
 3 - calcular e carregar OCR0A (no cabecalho)
-4 - habilitar interrupÁıes OCIEA0, e interrupÁ„o global (TIMSK0)
+4 - habilitar interrup√ß√µes OCIEA0, e interrup√ß√£o global (TIMSK0)
 5 - setar valor do prescaler (TCCR0B)
 6 - programar ISR
 */
@@ -68,6 +68,6 @@ void iniciar_timer(void)
 	OCR0A = 64;                                           // valor do registrador de comparacao da saida OC0A (TOP)
 	TIMSK0 = 0b00000010;                                  // habilita a interrupcao do TC0 || 1<<OCIE0A
 	TCCR0B = 0b10000101;                                  /* TC0 com prescaler de 1024, a 16 MHz gera uma
-	                                                         interrupÁ„o a cada 16,384 ms || TCCR0B = (1<<CS02) | (1<<CS00); 
-															 modo ctc de operaÁ„o -> (0<<WGM02)  */
+	                                                         interrup√ß√£o a cada 16,384 ms || TCCR0B = (1<<CS02) | (1<<CS00); 
+					                         modo ctc de opera√ß√£o -> (0<<WGM02)  */
 }
