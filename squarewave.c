@@ -8,7 +8,7 @@
  *         2*N*foc0a          2*1024*60
  *
  * Created: 16/10/2018 23:06:11
- *  Author: Leonardo
+ *  Author: José L. Natalício
  */ 
 
 //frequencia do cristal externo = 16MHz
