@@ -2,7 +2,7 @@
  * ins_and_outs.c
  *
  * Created: 10/07/2018 00:11:11
- * Author : José Leonardo
+ * Author : José L. Natalício
  * Objetivo: Criar primeiro programa funcional para o Arduino UNO, para familiarização/aprendizado
  *           Nesse caso, esse programa fará um gerador de pulso de 0.5s ("Hello World da Eletrônica Digital")
  */ 
@@ -27,7 +27,6 @@
 */
 
 #define bit_set(reg,bit) (reg |= (1<<bit))
-
 #define bit_reset(reg,bit) (reg &= ~(1<<bit))
 
 int main(void)
