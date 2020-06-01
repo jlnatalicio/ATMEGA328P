@@ -17,13 +17,13 @@
 /*3º: definir funções que serão utilizadas no projeto (elas são definidas aqui, pois melhora 
 *     a visualização do código como um todo).
 * 
-*     Como visto no datasheet do microcontrolador, para trabalharmos com uma das GPIO, devemos utilizar a função DDRB,
+*     Como visto no datasheet do microcontrolador, para trabalharmos com uma das GPIO, devemos utilizar o registrador DDRB,
 *     que funciona da seguinte forma:
 *
 * registrador = registrador OU bit_de_interesse(1) -> ligando um determinado bit
 * registrador = registrador E [NÃO bit_de_interesse(1)] -> desligando um determinado bit
 *
-*     traduzindo para um pseudo-código: reg |= (1<<bit) e reg &= ~(1<<(bit))
+*     traduzindo para código: reg |= (1<<bit) e reg &= ~(1<<(bit))
 */
 
 #define bit_set(reg,bit) (reg |= (1<<bit))
