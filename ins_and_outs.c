@@ -20,8 +20,8 @@
 *     Como visto no datasheet do microcontrolador, para trabalharmos com uma das GPIO, devemos utilizar o registrador DDRB,
 *     que funciona da seguinte forma:
 *
-* registrador = registrador OU bit_de_interesse(1) -> ligando um determinado bit
-* registrador = registrador E [NÃO bit_de_interesse(1)] -> desligando um determinado bit
+*     registrador = registrador OU bit_de_interesse(1) -> ligando um determinado bit
+*     registrador = registrador E [NÃO bit_de_interesse(1)] -> desligando um determinado bit
 *
 *     traduzindo para código: reg |= (1<<bit) e reg &= ~(1<<(bit))
 */
