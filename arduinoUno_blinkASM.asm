@@ -1,13 +1,11 @@
-/*
- * arduinoUno_blinkASM.asm
- *
- * programa b·sico para acender a apagar o LED na placa do arduino UNO,
- * em um perÌodo de 1 segundo.
- *
- *  Created: 16/06/2020
- *   Author: JosÈ L. NatalÌcio
- *
- */
+;*
+;* arduinoUno_blinkASM.asm
+;*
+;* programa b√°sico para acender a apagar o LED na placa do arduino UNO,
+;* em um per√≠odo de 1 segundo.
+;*
+;*  Created: 16/06/2020
+;*   Author: Jos√© L. Natal√≠cio
 
 .EQU LED = PB5
 .ORG $00
