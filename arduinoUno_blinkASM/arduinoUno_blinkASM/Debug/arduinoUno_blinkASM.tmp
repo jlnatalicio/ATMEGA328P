@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\arduinoUno_blinkASM.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\Debug/arduinoUno_blinkASM.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>arduinoUno_blinkASM.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>arduinoUno_blinkASM.map</FILE>
+  <FILE>arduinoUno_blinkASM.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INICIO><FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\arduinoUno_blinkASM.asm</FILE><LINE>19</LINE></INICIO>
+  <PRINCIPAL><FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\arduinoUno_blinkASM.asm</FILE><LINE>23</LINE></PRINCIPAL>
+  <PAUSA><FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\arduinoUno_blinkASM.asm</FILE><LINE>30</LINE></PAUSA>
+  <VOLTA><FILE>C:\Users\Leonardo\Documents\Atmel Studio\6.2\Projects\arduinoUno_blinkASM\arduinoUno_blinkASM\arduinoUno_blinkASM.asm</FILE><LINE>32</LINE></VOLTA>
+ </LABELS>
+</ASSEMBLER_INFO>
