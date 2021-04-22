@@ -18,7 +18,7 @@ OUT     DDRD, R16  ; definindo os pinos do PORTD como saída
 LDI     R17, $FF   ; carregando registrador com bits 1111 1111
 OUT     PORTD, R17 ; escrevendo pinos do PORTD em nível alto (mantendo LEDs apagados)
 
-PRINCIPAL: 
+INICIO: 
         LDI     R19, $7F   ; carregando registrador com bits 0111 1111
 	OUT     PORTD, R19
 	RCALL   PAUSA
