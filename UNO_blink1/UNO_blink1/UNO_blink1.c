@@ -5,7 +5,7 @@
  *           e 3 vezes lentamente.
  *
  * Created: 16/06/2020
- *  Author: José L. Natalício
+ * Author: JosÃ© L. NatalÃ­cio
  */ 
 
 #define F_CPU 16000000UL
@@ -18,8 +18,8 @@
 
 int main(void) {
 	
-	setBit(DDRB, PORTB5);    // define PB5 como saída
-	clearBit(PORTB, PORTB5); // seta PB5 em nível lógico 0
+	setBit(DDRB, PORTB5);    // define PB5 como saÃ­da
+	clearBit(PORTB, PORTB5); // seta PB5 em nÃ­vel lÃ³gico 0
 	
     while(1) {
 		
