@@ -34,7 +34,7 @@ LOOP:
 	LDI     R19, $FF   ; carregando registrador com bits 1111 1111
 	OUT     PORTD, R19
 	RCALL   PAUSA
-	RJMP    PRINCIPAL
+	RJMP    INICIO
 
 PAUSA:
         LDI     R16, $51
