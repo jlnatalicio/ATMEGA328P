@@ -31,7 +31,7 @@
 
 int main(void)
 {
-	bit_set (DDRB,PORTB5);	/*Como visto no datasheet, quando temos um bit do DDRx em 1, temos aquele bit do registrador como
+	bit_set (DDRB,PORTB5);	/* Como visto no datasheet, quando temos um bit do DDRx em 1, temos aquele bit do registrador como
 				 * saída. Então, usando a função que acabamos de definir, ligamos o bit 5 do DDRB (0001 0000),
 				 * definindo-o então como saída!*/						
     while (1) 
