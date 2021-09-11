@@ -64,7 +64,7 @@ int main(void)
 
 void iniciar_timer(void)
 {
-	TCCR0A = 0b01000010;                                  // habilita modo CTC, com TOP em OCR0A || (1<<WGM01) | (1<<WGM00)
+	TCCR0A = 0b01000010;                                  // habilita modo CTC, com TOP em OCR0A || (1<<WGM01) 
 	OCR0A = 64;                                           // valor do registrador de comparacao da saida OC0A (TOP)
 	TIMSK0 = 0b00000010;                                  // habilita a interrupcao do TC0 || 1<<OCIE0A
 	TCCR0B = 0b10000101;                                  /* TC0 com prescaler de 1024, a 16 MHz gera uma
